@@ -12,7 +12,7 @@ jobs:
       - name: Print branch
         run: ./.github/scripts/print_branch.sh
 
-       - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         ref: 'test'
 
       - name: Print branch
