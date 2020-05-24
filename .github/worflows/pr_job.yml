@@ -7,13 +7,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        ref: 'master'
+        with:
+          ref: master
 
       - name: Print branch
         run: ./.github/scripts/print_branch.sh
 
-       - uses: actions/checkout@v2
-        ref: 'test'
+      - uses: actions/checkout@v2
+        with:
+          ref: 'test'
 
       - name: Print branch
         run: ./.github/scripts/print_branch.sh
